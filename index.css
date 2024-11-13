@@ -1,71 +1,81 @@
-body{
-    background-color: rgb(0, 0, 0);
-    color:black;
-    font-family:Arial, Helvetica, sans-serif;
+body {
+    background-color: #121212; /* Fundo escuro mais suave */
+    color: #ffffff; /* Cor do texto mais suave e legível */
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-ul{
+ul {
     display: flex;
     justify-content: space-around;
     list-style-type: none;
     align-items: center;
     padding: 16px;
+    background-color: #1c1c1c; /* Cor de fundo do menu */
 }
 
-a{
-    color: #52C2E0;
+a {
+    color: #82CFFD; /* Azul claro mais suave */
     text-decoration: none;
 }
 
-header img{
+a:hover {
+    color: #ffffff; /* Cor para o hover mais clara */
+}
+
+header img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: 5px solid #52C2E0;
+    border: 5px solid #82CFFD; /* Cor azul suave para a borda da imagem */
 }
 
-footer img{
+footer img {
     width: 50px;
     height: 50px;
 }
 
-.center{
+.center {
     text-align: center;
     margin-top: 20px;
 }
 
-h1{
-    color: #00A1E0;
+h1 {
+    color: #8EC8FF; /* Azul claro e suave para o título */
 }
 
 footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2px 0;
-    background-color: #52C2E0;
+    padding: 20px 0;
+    background-color: #3A3A3A; /* Fundo do footer mais escuro */
     border-radius: 15px;
     font-weight: bold;
 }
 
-footer a{
-    margin: 20px;
+footer a {
+    margin: 10px;
     text-align: center;
+    color: #82CFFD;
+}
+
+footer a:hover {
+    color: #ffffff;
 }
 
 footer p {
     margin-top: 1px;
-    color: black;
+    color: #ffffff; /* Cor mais clara para o texto no footer */
 }
 
-.container{
+.container {
     padding: 0px 50px;
 }
 
-nav a:hover{
-    color: white;
+.nav a:hover {
+    color: #ffffff;
 }
 
 .nav {
@@ -73,25 +83,28 @@ nav a:hover{
 }
 
 .projetos-box {
-    border: 5px solid #52C2E0;
-    padding: 6px;
+    border: 5px solid #82CFFD; /* Borda azul suave para as caixas de projetos */
+    padding: 16px;
     border-radius: 15px;
     margin: 5px 0;
-    background-color: white;
+    background-color: #2c2c2c; /* Fundo cinza escuro para os boxes */
+    color: #ffffff; /* Texto branco para os boxes */
     text-align: center;
 }
 
-section img{
+section img {
     height: 50px;
 }
 
-section a:hover{
-    color: black;
+section a:hover {
+    color: #82CFFD; /* Cor do link no hover */
 }
 
+/* Responsividade */
 @media (max-width: 768px) {
     ul {
         flex-direction: column;
+        background-color: #1c1c1c; /* Cor de fundo mais escura no menu */
     }
     
     .container {
